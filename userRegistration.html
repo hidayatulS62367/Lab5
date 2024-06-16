@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="registrationform" action="processUser.jsp" method="post" onsubmit="patternMatching()">
+            <fieldset>
+                <legend>User Details</legend>
+                <table>
+                    <tr>
+                        <td><label>Name</label></td>
+                        <td><input name="firstName" type="text" placeholder="Enter firstname" size="50"/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Surname</label></td>
+                        <td><input name="surName" type="text" placeholder="Enter surname" size="50"/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td><input name="password" type="password" placeholder="Max 10 characters" size="30"/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>
+                            <label>Male </label><input name="gender" type="radio" value="Male"/> 
+                            <label>Female </label><input name="gender" type="radio" value="Female"/>
+                        </td>
+                    </tr>
+<tr>
+                        <td><label>Type of User</label></td>
+                        <td>
+                            <select name="userType">
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Prefer Language</label></td>
+                        <td>
+                            <label>Malay</label>
+                            <input name="preferLang" type="checkbox" value="Malay"/>
+                            <label>English</label>
+                            <input name="preferLang" type="checkbox" value="English"/>
+                            <label>Mandarin</label>
+                            <input name="preferLang" type="checkbox" value="Mandarin"/>
+                            <label>Tamil</label>
+                            <input name="preferLang" type="checkbox" value="Tamil"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <input type="submit" id="btnSubmit" value="Submit"/> 
+                            <input type="reset" id="btnCancel" value="Cancel"/>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <br>
+        <footer>&COPY;Hidayatul Ain</footer>
+    </body>
+</html>
